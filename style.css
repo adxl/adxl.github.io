@@ -7,7 +7,7 @@ h1, h2, p {
     margin: 0;
 }
 
-/* section 1 : intro */
+/* section 0 : intro */
 
 #intro-sec {
     background-color: aquamarine;
@@ -23,6 +23,20 @@ h1, h2, p {
 #title {
     text-align: center;
     background-color: brown;
+}
+
+/* section 1 : about */
+
+#about-sec .left {
+    width: 75%;
+    float: left;
+}
+
+#about-sec .right {
+    width: 25%;
+    float: left;
+    background-color: hotpink;
+    overflow: hidden;
 }
 
 /* section 2 : education */
