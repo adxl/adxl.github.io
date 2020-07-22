@@ -50,3 +50,8 @@ h1, h2, p {
     background-color: darkolivegreen;
     overflow: hidden;
 }
+
+#skills-sec .cat {
+    width: 25%;
+    float: left;
+}
