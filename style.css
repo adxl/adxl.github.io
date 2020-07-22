@@ -69,3 +69,25 @@ h1, h2, p {
     width: 25%;
     float: left;
 }
+
+/* section 4 : projects */
+
+#projects-sec {
+    margin: 0 5%;
+}
+
+.project-item {
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-item .picture {
+    width: 20%;
+    float: left;
+}
+
+.project-item .details {
+    width: 80%;
+    float: left;
+    background-color: lightsalmon;
+}
