@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+/* section 1 : intro */
+
+#intro-sec {
+    background-color: aquamarine;
+    height: 100%;
+}
+
+#name {
+    text-align: center;
+    background-color: blueviolet;
+    padding-top: 15%;
+}
+
+#title {
+    text-align: center;
+    background-color: brown;
+}
+
+/* section 2 : education */
+
+#edu-sec {
+    width: 100%;
+    background-color: crimson;
+    overflow: hidden;
+}
+
+#edu-sec .left {
+    width: 50%;
+    float: left;
+}
+
+#edu-sec .right {
+    width: 50%;
+    float: left;
+}
+
+/* section 3 : skills */
+
+#skills-sec {
+    width: 100%;
+    background-color: darkolivegreen;
+    overflow: hidden;
+}
