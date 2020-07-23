@@ -127,13 +127,35 @@ ul {
 
 #skills-sec {
     width: 100%;
-    background-color: darkolivegreen;
+    background-color: #1C1B20;
     overflow: hidden;
+    padding-bottom: 90px;
+}
+
+#skills-sec h1 {
+    font-size: xx-large;
+    text-align: center;
+    margin: 50px 0;
+    color: white;
 }
 
 #skills-sec .cat {
     width: 25%;
     float: left;
+}
+
+#skills-sec .cat .title {
+    color: white;
+    padding-left: 25%;
+}
+
+#skills-sec .cat ul {
+    padding-left: 30%;
+}
+
+#skills-sec .cat li {
+    color: #4c4a57;
+    margin: 10px 0;
 }
 
 /* section 4 : projects */
