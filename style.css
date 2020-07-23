@@ -4,9 +4,14 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, p {
+h1, p {
     margin: 0;
     color: #343a40;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 /* section 0 : intro */
@@ -21,7 +26,7 @@ h1, h2, p {
     padding-top: 15%;
 }
 
-#name>h2 {
+#name>h1 {
     font-size: 38pt;
     color: white;
 }
@@ -47,7 +52,7 @@ h1, h2, p {
     float: left;
 }
 
-#about-sec .left h2 {
+#about-sec .left h1 {
     font-size: xx-large;
     margin: 8% 0 0 5%;
 }
@@ -71,18 +76,51 @@ h1, h2, p {
 
 #edu-sec {
     width: 100%;
-    background-color: crimson;
     overflow: hidden;
+    background-color: rgb(231, 231, 231);
+    /* background-image: url("https://picsum.photos/1920/1080");
+    background-position: center;
+    background-repeat: no-repeat; */
 }
 
-#edu-sec .left {
-    width: 50%;
-    float: left;
+#edu-sec #edu-cont {
+    padding: 0 0 5% 2%;
+    margin: 2%;
+    border-radius: 20px;
 }
 
-#edu-sec .right {
-    width: 50%;
-    float: left;
+#edu-sec h1 {
+    font-size: xx-large;
+    text-align: center;
+    margin: 50px 0;
+}
+
+#edu-sec p {}
+
+#edu-sec ul:first-child {
+    padding-left: 50%;
+}
+
+#edu-sec .edu-item {
+    margin: 20px 0;
+}
+
+#edu-sec .edu-item p {
+    margin: 5px;
+}
+
+#edu-sec .edu-time {
+    font-size: medium;
+}
+
+#edu-sec .edu-degree {
+    font-size: large;
+    padding-left: 20px;
+}
+
+#edu-sec .edu-school {
+    font-size: small;
+    padding-left: 50px;
 }
 
 /* section 3 : skills */
