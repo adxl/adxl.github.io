@@ -1,42 +1,70 @@
 html, body {
     height: 100%;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, p {
     margin: 0;
+    color: #343a40;
 }
 
 /* section 0 : intro */
 
 #intro-sec {
-    background-color: aquamarine;
+    background-color: rgb(87, 189, 207);
     height: 100%;
 }
 
 #name {
     text-align: center;
-    background-color: blueviolet;
     padding-top: 15%;
+}
+
+#name>h2 {
+    font-size: 38pt;
+    color: white;
 }
 
 #title {
     text-align: center;
-    background-color: brown;
+}
+
+#title p {
+    font-size: xx-large;
+    color: white;
 }
 
 /* section 1 : about */
 
+#about-sec {
+    overflow: hidden;
+    margin: 5% 10%;
+}
+
 #about-sec .left {
-    width: 75%;
+    width: 60%;
     float: left;
 }
 
+#about-sec .left h2 {
+    font-size: xx-large;
+    margin: 8% 0 0 5%;
+}
+
+#about-sec .left p {
+    font-size: large;
+    margin: 10px 0 0 8%;
+}
+
 #about-sec .right {
-    width: 25%;
+    width: 40%;
     float: left;
-    background-color: hotpink;
-    overflow: hidden;
+}
+
+#about-sec .right>img {
+    padding: 1%;
+    border-radius: 50%;
 }
 
 /* section 2 : education */
