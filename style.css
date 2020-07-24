@@ -182,7 +182,7 @@ ul {
 .project-item .picture {
     width: 40%;
     float: left;
-    padding-top: 70px;
+    padding-top: 60px;
 }
 
 .project-item .picture img {
@@ -195,7 +195,7 @@ ul {
 }
 
 .project-item .details .title {
-    padding: 20px 0 20px 0;
+    padding: 0 0 20px 0;
     font-size: x-large;
 }
 
@@ -224,6 +224,10 @@ ul {
     margin: 50px 0 0 0;
 }
 
-.project-item .details .links .source-btn {}
+.project-item .details .links .source-btn {
+    margin: 0 20px 50px 0;
+}
 
-.project-item .details .links .try-btn {}
+.project-item .details .links .try-btn {
+    margin: 0 0 50px 0;
+}
