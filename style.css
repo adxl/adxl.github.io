@@ -48,7 +48,7 @@ ul {
 }
 
 #about-sec .left {
-    width: 60%;
+    width: 50%;
     float: left;
 }
 
@@ -64,7 +64,7 @@ ul {
 
 #about-sec .right {
     width: 40%;
-    float: left;
+    float: right;
 }
 
 #about-sec .right>img {
