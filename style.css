@@ -17,7 +17,7 @@ ul {
 /* section 0 : intro */
 
 #intro-sec {
-    background-color: rgb(87, 189, 207);
+    background-color: rgb(63, 67, 68);
     height: 100%;
 }
 
@@ -153,15 +153,17 @@ ul {
     padding-left: 30%;
 }
 
+/* skills elements */
+
 #skills-sec .cat li {
-    color: #4c4a57;
+    color: #919099;
     margin: 10px 0;
 }
 
 /* section 4 : projects */
 
 #projects-sec {
-    margin: 0 5%;
+    margin: 0 15%;
 }
 
 #projects-sec h1 {
@@ -174,11 +176,13 @@ ul {
 .project-item {
     width: 100%;
     overflow: hidden;
+    margin: 50px 0;
 }
 
 .project-item .picture {
     width: 40%;
     float: left;
+    padding-top: 70px;
 }
 
 .project-item .picture img {
@@ -186,7 +190,40 @@ ul {
 }
 
 .project-item .details {
-    width: 60%;
-    float: left;
-    background-color: lightsalmon;
+    width: 55%;
+    float: right;
 }
+
+.project-item .details .title {
+    padding: 20px 0 20px 0;
+    font-size: x-large;
+}
+
+.project-item .details .description {
+    padding: 0 0 0 20px;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.project-item .details .tech {
+    padding-left: 30px;
+    color: rgb(102, 100, 100);
+}
+
+.project-item .details .features {
+    padding: 40px 0 0 30px;
+}
+
+.project-item .details ul {
+    padding-left: 50px;
+    list-style-type: none;
+    color: #343a40;
+}
+
+.project-item .details .links {
+    margin: 50px 0 0 0;
+}
+
+.project-item .details .links .source-btn {}
+
+.project-item .details .links .try-btn {}
