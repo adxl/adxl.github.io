@@ -19,6 +19,7 @@ ul {
 #intro-sec {
     background-color: rgb(63, 67, 68);
     height: 100%;
+    text-align: center;
 }
 
 #name {
@@ -40,11 +41,29 @@ ul {
     color: white;
 }
 
+#scroll-arrow {
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+}
+
+#scroll-arrow i {
+    /* border: solid 1px white; */
+    font-size: 48pt;
+    border-radius: 10px;
+    padding: 20px 50px;
+    cursor: pointer;
+}
+
 /* section 1 : about */
 
 #about-sec {
     overflow: hidden;
-    margin: 5% 10%;
+    margin: 0 10%;
+    padding: 5% 0;
 }
 
 #about-sec .left {
