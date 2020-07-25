@@ -15,9 +15,11 @@ function gotoSkills() {
     sec.scrollIntoView({ behavior: "smooth" });
 }
 
-
+//this should normaly go to weight-tracker but actually goes to first project including title
 function gotoWtrk() {
-    var project = document.getElementById("p-wtrk");
+    // don't goto weight-tracker 
+    // var project = document.getElementById("p-wtrk");
+    var project = document.getElementById("projects-main-title");
     project.scrollIntoView({ behavior: "smooth" });
     $("#p-wtrk .picture").fadeTo("fast", 1)
     $("#p-wtrk .picture").animate({ left: 30 })
