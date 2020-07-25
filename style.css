@@ -200,6 +200,9 @@ ul {
     width: 55%;
     float: left;
     padding-top: 60px;
+    opacity: 0;
+    position: absolute;
+    left: -500px;
 }
 
 .project-item .picture img {
