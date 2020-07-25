@@ -1,8 +1,20 @@
-function scrollToAbout() {
+function gotoAbout() {
     // console.log("scrolled");
-    var about = document.getElementById("about-sec");
-    about.scrollIntoView({ behavior: "smooth" });
+    var sec = document.getElementById("about-sec");
+    sec.scrollIntoView({ behavior: "smooth" });
 }
+
+function gotoEdu() {
+    // console.log("scrolled");
+    var sec = document.getElementById("edu-sec");
+    sec.scrollIntoView({ behavior: "smooth" });
+}
+function gotoSkills() {
+    // console.log("scrolled");
+    var sec = document.getElementById("skills-sec");
+    sec.scrollIntoView({ behavior: "smooth" });
+}
+
 
 function gotoWtrk() {
     var project = document.getElementById("p-wtrk");
