@@ -196,6 +196,7 @@ ul {
 #projects-sec {
     margin: 0 4%;
     height: 100%;
+    position: relative;
 }
 
 /* h1 := #projects-main-title */
@@ -203,8 +204,9 @@ ul {
 #projects-sec h1 {
     font-size: xx-large;
     text-align: center;
-    padding-top: 20px;
     color: #343a40;
+    position: absolute;
+    padding-top: 30px;
 }
 
 .project-item {

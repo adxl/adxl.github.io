@@ -15,42 +15,39 @@ function gotoSkills() {
     sec.scrollIntoView({ behavior: "smooth" });
 }
 
-//this should normaly go to weight-tracker but actually goes to first project including title
 function gotoWtrk() {
-    // don't goto weight-tracker 
-    // var project = document.getElementById("p-wtrk");
-    var project = document.getElementById("projects-main-title");
+    var project = document.getElementById("p-wtrk");
     project.scrollIntoView({ behavior: "smooth" });
-    $("#p-wtrk .picture").fadeTo("fast", 1)
-    $("#p-wtrk .picture").animate({ left: 30 })
+    $("#p-wtrk .picture").clearQueue().animate({ left: 30 }, 600)
+    $("#p-wtrk .picture").clearQueue().fadeTo("slow", 1)
 }
 
 function gotoLife() {
     var project = document.getElementById("p-life");
     project.scrollIntoView({ behavior: "smooth" });
-    $("#p-life .picture").fadeTo("fast", 1)
-    $("#p-life .picture").animate({ left: 30 })
+    $("#p-life .picture").clearQueue().animate({ left: 30 }, 600)
+    $("#p-life .picture").clearQueue().fadeTo("slow", 1)
 }
 
 function gotoKnights() {
     var project = document.getElementById("p-knights");
     project.scrollIntoView({ behavior: "smooth" });
-    $("#p-knights .picture").fadeTo("fast", 1)
-    $("#p-knights .picture").animate({ left: 30 })
+    $("#p-knights .picture").clearQueue().animate({ left: 30 }, 600)
+    $("#p-knights .picture").clearQueue().fadeTo("slow", 1)
 }
 
 function gotoWebuy() {
     var project = document.getElementById("p-webuy");
     project.scrollIntoView({ behavior: "smooth" });
-    $("#p-webuy .picture").fadeTo("fast", 1)
-    $("#p-webuy .picture").animate({ left: 30 })
+    $("#p-webuy .picture").clearQueue().animate({ left: 30 }, 600)
+    $("#p-webuy .picture").clearQueue().fadeTo("slow", 1)
 }
 
 function gotoForum() {
     var project = document.getElementById("p-forum");
     project.scrollIntoView({ behavior: "smooth" });
-    $("#p-forum .picture").fadeTo("fast", 1)
-    $("#p-forum .picture").animate({ left: 30 })
+    $("#p-forum .picture").clearQueue().animate({ left: 30 }, 600)
+    $("#p-forum .picture").clearQueue().fadeTo("slow", 1)
 }
 
 
