@@ -69,16 +69,13 @@ ul {
 
 #about-sec {
     overflow: hidden;
-    /* margin: 0 10%;
-    padding: 5% 0; */
-    position: relative;
-    height: 100%;
+    /* height: 100%; */
+    padding: 10% 0;
 }
 
 #about-sec .left {
     width: 50%;
     float: left;
-    padding-top: 10%;
 }
 
 #about-sec .left h1 {
@@ -94,7 +91,6 @@ ul {
 #about-sec .right {
     width: 40%;
     float: right;
-    padding-top: 10%;
 }
 
 #about-sec .right>img {
@@ -108,15 +104,11 @@ ul {
     width: 100%;
     overflow: hidden;
     background-color: rgb(231, 231, 231);
-    /* background-image: url("https://picsum.photos/1920/1080");
-    background-position: center;
-    background-repeat: no-repeat; */
-    height: 100%;
-    position: relative;
+    /* height: 100%; */
+    padding: 5% 0;
 }
 
 #edu-sec #edu-cont {
-    padding: 0 0 5% 2%;
     margin: 2%;
     border-radius: 20px;
 }
@@ -124,7 +116,7 @@ ul {
 #edu-sec h1 {
     font-size: xx-large;
     text-align: center;
-    margin: 50px 0;
+    margin-bottom: 50px 0;
 }
 
 #edu-sec ul:first-child {
@@ -157,36 +149,40 @@ ul {
 
 #skills-sec {
     width: 100%;
-    background-color: #1C1B20;
-    overflow: hidden;
     height: 100%;
-    position: relative;
+    background-color: crimson;
 }
 
-#skills-sec h1 {
+#skills-cont {
+    overflow: hidden;
+    background-color: #1C1B20;
+    height: 90%;
+}
+
+#skills-cont h1 {
     font-size: xx-large;
     text-align: center;
-    margin: 50px 0;
+    margin: 50px 0 100px 0;
     color: white;
 }
 
-#skills-sec .cat {
+#skills-cont .cat {
     width: 25%;
     float: left;
 }
 
-#skills-sec .cat .title {
+#skills-cont .cat .title {
     color: white;
     padding-left: 25%;
 }
 
-#skills-sec .cat ul {
+#skills-cont .cat ul {
     padding-left: 30%;
 }
 
 /* skills elements */
 
-#skills-sec .cat li {
+#skills-cont .cat li {
     color: #919099;
     margin: 10px 0;
 }
@@ -195,34 +191,32 @@ ul {
 
 #projects-sec {
     margin: 0 4%;
-    position: relative;
+    /* position: relative; */
+    scroll-snap-type: y mandatory;
 }
-
-/* h1 := #projects-main-title */
 
 #projects-sec h1 {
     font-size: xx-large;
     text-align: center;
     color: #343a40;
-    position: absolute;
     padding-top: 30px;
 }
 
 .project-item {
     width: 100%;
     height: 100vh;
-    /* overflow: hidden; */
-    margin: 0;
-    position: relative;
+    overflow: hidden;
+    scroll-snap-align: start;
+    /* position: relative; */
 }
 
 .project-item .picture {
     width: 55%;
     float: left;
     padding-top: calc(5% + 60px);
-    opacity: 0;
+    opacity: 30%;
     position: absolute;
-    left: -100%;
+    /* left: -100%; */
 }
 
 .project-item .picture img {
