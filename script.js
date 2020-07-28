@@ -50,6 +50,10 @@ function gotoForum() {
     $("#p-forum .picture").clearQueue().fadeTo("slow", 1)
 }
 
+function gotoResume() {
+    var sec = document.getElementById("resume-sec");
+    sec.scrollIntoView({ behavior: "smooth" });
+}
 
 
 $(window).scroll(function () {
