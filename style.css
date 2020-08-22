@@ -198,13 +198,15 @@ ul {
     font-size: xx-large;
     text-align: center;
     color: white;
-    padding: 30px 0;
+    padding-top: 30px;
 }
 
 .project-item {
-    border: solid 1px yellow;
+    /* border: solid 1px yellow; */
     overflow: hidden;
-    margin-bottom: 50px;
+    position: relative;
+    padding: 80px 0;
+    border-bottom: solid 1px white;
 }
 
 .project-item-left {
@@ -218,9 +220,12 @@ ul {
 }
 
 .project-item .picture {
-    width: 50%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     text-align: center;
-    border: solid 3px darkblue
+    /* border: solid 3px darkblue; */
 }
 
 .project-item-left .picture {
@@ -229,6 +234,7 @@ ul {
 
 .project-item-right .picture {
     float: right;
+    right: 0;
 }
 
 .project-item .picture img {
@@ -236,16 +242,17 @@ ul {
 }
 
 .project-item .details {
-    border: solid 3px lime;
+    /* border: solid 3px lime; */
 }
 
 .project-item-left .details {
-    width: 45%;
+    width: 35%;
+    /* margin-left: 5%; */
     float: right;
 }
 
 .project-item-right .details {
-    width: 50%;
+    width: 35%;
     float: left;
 }
 
@@ -259,6 +266,7 @@ ul {
     padding: 0 0 0 20px;
     margin-bottom: 10px;
     font-size: large;
+    color: #919099;
 }
 
 .project-item .details .tech {
@@ -268,19 +276,19 @@ ul {
 
 .project-item .details .features {
     padding: 40px 0 0 30px;
+    color: white;
 }
 
 .project-item .details ul {
     padding-left: 50px;
     list-style-type: none;
-    color: #343a40;
+    color: #919099;
 }
 
 .project-item .links {
     text-align: center;
-    /* width: 50%; */
-    /* float: left; */
-    border: 3px crimson solid;
+    margin-top: 10px;
+    /* border: 3px crimson solid; */
 }
 
 .project-item .links .source-btn {
