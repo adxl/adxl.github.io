@@ -70,32 +70,33 @@ ul {
 #about-sec {
     overflow: hidden;
     height: 100vh;
-    background-color: #1C1B20;
     width: 100%;
     /* border: solid 3px green; */
-    margin: auto;
     position: relative;
 }
 
+/* 
 #about-panel {
     width: calc(100% - 100vh);
     height: 100%;
-    /* background-color: tomato; */
+    background-color: tomato;
     background-color: white;
-    /* border: solid 5px yellow; */
-    float: left;
+    border: solid 5px yellow;
+    float: right;
     overflow: hidden;
-}
+    border-bottom-right-radius: 50%;
+} */
 
 #about-container {
     overflow: hidden;
     /* border: solid 5px blue; */
-    width: 100vh;
-    height: 100%;
-    /* background-color: darkolivegreen; */
-    background-color: white;
-    float: left;
-    border-top-left-radius: 100%;
+    /* width: calc(100vh); */
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: crimson;
 }
 
 /* #about-container {
@@ -109,31 +110,40 @@ ul {
 } */
 
 #about-content {
-    position: absolute;
-    /* border: solid 2px red; */
-    width: calc(100% - 25vh);
-    right: 0;
-    top: 30%
+    /* border: solid 3px darkred; */
+    /* width: calc(100% - 25vh); */
+    width: 100%;
+    height: 95%;
+    background-color: #1C1B20;
+    overflow: hidden;
+    position: relative;
 }
 
 #about-content .left {
     width: 50%;
-    float: left;
+    /* border: solid 2px blue; */
+    position: absolute;
+    top: 25%;
 }
 
 #about-content .left h1 {
     font-size: xx-large;
     margin: 8% 0 0 20%;
+    color: white;
 }
 
 #about-content .left p {
     font-size: large;
     margin: 10px 0 0 25%;
+    color: white;
 }
 
 #about-content .right {
     width: 40%;
-    float: right;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    /* border: solid 2px green; */
 }
 
 #about-content .right>img {
@@ -151,14 +161,15 @@ ul {
 
 #edu-cont {
     height: 100%;
-    background-color: #e7e7e7;
+    background-color: white;
+    border-bottom: solid 50px crimson;
     border-bottom-left-radius: 100%;
 }
 
 #edu-sec h1 {
     font-size: xx-large;
     text-align: center;
-    padding: 50px 0 100px 0;
+    padding: 50px 0 50px 0;
 }
 
 #edu-sec ul:first-child {
