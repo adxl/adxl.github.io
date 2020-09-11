@@ -33,10 +33,34 @@
 
 <body>
 
+	<!-- navigator -->
+	<div id="navigator">
+		<div id="anchors">
+			<ul>
+				<!--home-->
+				<li><a onclick="gotoIntro()"><i class="fas fa-circle"></i></a></li>
+				<!--about-->
+				<li><a onclick="gotoAbout()"><i class="fas fa-circle"></i></a></li>
+				<!--edu-->
+				<li><a onclick="gotoEdu()"><i class="fas fa-circle"></i></a></li>
+				<!--skills-->
+				<li><a onclick="gotoSkills()"><i class="fas fa-circle"></i></a></li>
+				<!--project-->
+				<li><a onclick="gotoProjects()"><i class="fas fa-circle"></i></a></li>
+				<!--resume-->
+				<li><a onclick="gotoResume()"><i class="fas fa-circle"></i></a></li>
+			</ul>
+		</div>
+	</div>
+
 	<!-- section 0 : intro -->
 	<div id="intro-sec">
 		<div id="name">
-			<h1>Hi, I'm Adel</h1>
+			<h1>Hi, I'm
+				<p id="custom-name">
+					Adel
+				</p>
+			</h1>
 		</div>
 		<div id="title">
 			<p>Full Stack Web Developer</p>

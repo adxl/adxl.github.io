@@ -1,3 +1,8 @@
+function gotoIntro() {
+    let sec = document.getElementById("intro-sec")
+    sec.scrollIntoView({ behavior: "smooth" })
+}
+
 function gotoAbout() {
     // console.log("scrolled");
     var sec = document.getElementById("about-sec");
@@ -12,6 +17,11 @@ function gotoEdu() {
 function gotoSkills() {
     // console.log("scrolled");
     var sec = document.getElementById("skills-sec");
+    sec.scrollIntoView({ behavior: "smooth" });
+}
+
+function gotoProjects() { //
+    var sec = document.getElementById("projects-sec");
     sec.scrollIntoView({ behavior: "smooth" });
 }
 

@@ -15,6 +15,33 @@ ul {
     padding: 0;
 }
 
+/* extra : navigator */
+
+#navigator {
+    position: fixed;
+    height: 100vh;
+    /* border: solid 3px green; */
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+#navigator>#anchors {
+    /* border: solid 3px blue; */
+    /* background-color: white; */
+}
+
+#navigator>#anchors ul {
+    margin: 5px 2px;
+}
+
+#navigator>#anchors i {
+    font-size: x-large;
+    /* border: solid 1px salmon; */
+}
+
 /* section 0 : intro */
 
 #intro-sec {
@@ -22,6 +49,7 @@ ul {
     height: 100vh;
     text-align: center;
     scroll-snap-align: start;
+    border-top: solid 3px crimson;
 }
 
 #name {
@@ -34,7 +62,15 @@ ul {
     color: white;
 }
 
+#custom-name {
+    color: white;
+    border-bottom: solid 2px crimson;
+    display: inline;
+    padding: 0 5px;
+}
+
 #title {
+    padding-top: 10px;
     text-align: center;
 }
 
