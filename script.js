@@ -1,28 +1,52 @@
-function gotoIntro() {
+function gotoIntro(elem) {
     let sec = document.getElementById("intro-sec")
     sec.scrollIntoView({ behavior: "smooth" })
+
+    // let id = $(elem).children('i')[0].attr("id")
+
+    let anchor = $(elem).children('i').eq(0)
+    selectAnchor(anchor)
+
 }
 
-function gotoAbout() {
+function selectAnchor(anchor) {
+    console.log(anchor.attr('class'));
+    anchor.addClass('anchor-b')
+    console.log(anchor.attr('class'));
+}
+
+
+function gotoAbout(elem) {
     // console.log("scrolled");
     let sec = document.getElementById("about-sec");
     sec.scrollIntoView({ behavior: "smooth" });
+    let anchor = $(elem).children('i').eq(0)
+    selectAnchor(anchor)
+
 }
 
-function gotoEdu() {
+function gotoEdu(elem) {
     // console.log("scrolled");
     let sec = document.getElementById("edu-sec");
     sec.scrollIntoView({ behavior: "smooth" });
+    let anchor = $(elem).children('i').eq(0)
+    selectAnchor(anchor)
+
 }
-function gotoSkills() {
+function gotoSkills(elem) {
     // console.log("scrolled");
     let sec = document.getElementById("skills-sec");
     sec.scrollIntoView({ behavior: "smooth" });
+
+    let anchor = $(elem).children('i').eq(0)
+    selectAnchor(anchor)
 }
 
-function gotoProjects() { //
+function gotoProjects(elem) { //
     let sec = document.getElementById("projects-sec");
     sec.scrollIntoView({ behavior: "smooth" });
+    let anchor = $(elem).children('i').eq(0)
+    selectAnchor(anchor)
 }
 
 // function gotoWtrk() {
@@ -60,9 +84,12 @@ function gotoProjects() { //
 //     $("#p-forum .picture").clearQueue().fadeTo("slow", 1)
 // }
 
-function gotoResume() {
+function gotoResume(elem) {
     var sec = document.getElementById("resume-sec");
     sec.scrollIntoView({ behavior: "smooth" });
+
+    let anchor = $(elem).children('i').eq(0)
+    selectAnchor(anchor)
 }
 
 // $(window).scroll(function () {

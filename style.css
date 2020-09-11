@@ -40,6 +40,12 @@ ul {
 #navigator>#anchors i {
     font-size: x-large;
     /* border: solid 1px salmon; */
+    border-radius: 50%;
+}
+
+.anchor-b {
+    border: crimson 3px solid;
+    border-radius: 50%;
 }
 
 /* section 0 : intro */
