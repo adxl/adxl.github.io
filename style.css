@@ -308,6 +308,10 @@ ul {
 
 .project-item .picture img {
     width: 100%;
+    /* height: 60vh; */
+    /*TODO: crop images side align*/
+    /* height: 60vh; */
+    /* object-fit: none; */
 }
 
 .project-item .details {
