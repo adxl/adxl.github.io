@@ -43,6 +43,10 @@ ul {
     border-radius: 50%;
 }
 
+#navigator>#anchors a {
+    cursor: default;
+}
+
 .anchor-b {
     border: crimson 4px solid;
     /* border-radius: 50%; */
