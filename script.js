@@ -103,26 +103,27 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         const scrollPos = $(window).scrollTop()
+        const scrollOffset = $(window).height() / 2
         // console.log(scrollPos);
 
-        if (scrollPos >= resumeSec.top - 500) {
+        if (scrollPos >= resumeSec.top - scrollOffset) {
             selectAnchor($('#anchor-resume'))
             // console.log("vs resume : " + resumeSec.top);
         }
 
-        else if (scrollPos >= projectsSec.top) {
+        else if (scrollPos >= projectsSec.top - scrollOffset) {
             selectAnchor($('#anchor-projects'))
             // console.log("projects : " + projectsSec.top + " -- resume : " + resumeSec.top);
         }
-        else if (scrollPos >= skillsSec.top) {
+        else if (scrollPos >= skillsSec.top - scrollOffset) {
             selectAnchor($('#anchor-skills'))
         }
 
-        else if (scrollPos >= eduSec.top) {
+        else if (scrollPos >= eduSec.top - scrollOffset) {
             selectAnchor($('#anchor-edu'))
         }
 
-        else if (scrollPos >= aboutSec.top) {
+        else if (scrollPos >= aboutSec.top - scrollOffset) {
             selectAnchor($('#anchor-about'))
         }
         else if (scrollPos >= introSec.top) {
