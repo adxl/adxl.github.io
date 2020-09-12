@@ -93,6 +93,34 @@ function gotoResume(elem) {
     selectAnchor(anchor)
 }
 
+$(document).ready(function () {
+    const introSec = $('#intro-sec').offset();
+    const aboutSec = $('#about-sec').offset();
+    const eduSec = $('#edu-sec').offset();
+    const skillsSec = $('#skills-sec').offset();
+    const projectsSec = $('#projects-sec').offset()
+    const resumeSec = $('#resume-sec').offset()
+
+
+    $(window).scroll(function () {
+        const scrollPos = $(window).scrollTop()
+        if (scrollPos <= introSec.top) {
+            selectAnchor($('#anchor-intro'))
+        } else if (scrollPos <= aboutSec.top) {
+            selectAnchor($('#anchor-about'))
+        } else if (scrollPos <= eduSec.top) {
+            selectAnchor($('#anchor-edu'))
+        } else if (scrollPos <= skillsSec.top) {
+            selectAnchor($('#anchor-skills'))
+        } else if (scrollPos <= projectsSec.top) {
+            selectAnchor($('#anchor-projects'))
+        } else if (scrollPos <= resumeSec.top) {
+            selectAnchor($('#anchor-resume'))
+        }
+    });
+});
+
+
 // $(window).scroll(function () {
 //     $('.picture').each(function () {
 //         if ($(window).scrollTop() + $(window).height() - 200 > $(this).position().top) {
