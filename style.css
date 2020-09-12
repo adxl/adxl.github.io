@@ -399,6 +399,21 @@ ul {
     color: rgb(102, 100, 100);
 }
 
+.project-item .details .techs-logos-container {
+    width: 100%;
+    /* border: solid 2px green; */
+    margin-top: 20px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.techs-logos-container .techs-logos img {
+    width: 4vw;
+    padding: 0 5px;
+}
+
 .project-item .details .features {
     padding: 40px 0 0 30px;
     color: white;
