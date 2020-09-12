@@ -101,22 +101,34 @@ $(document).ready(function () {
     const projectsSec = $('#projects-sec').offset()
     const resumeSec = $('#resume-sec').offset()
 
-
     $(window).scroll(function () {
         const scrollPos = $(window).scrollTop()
-        if (scrollPos <= introSec.top) {
-            selectAnchor($('#anchor-intro'))
-        } else if (scrollPos <= aboutSec.top) {
-            selectAnchor($('#anchor-about'))
-        } else if (scrollPos <= eduSec.top) {
-            selectAnchor($('#anchor-edu'))
-        } else if (scrollPos <= skillsSec.top) {
-            selectAnchor($('#anchor-skills'))
-        } else if (scrollPos <= projectsSec.top) {
-            selectAnchor($('#anchor-projects'))
-        } else if (scrollPos <= resumeSec.top) {
+        // console.log(scrollPos);
+
+        if (scrollPos >= resumeSec.top - 500) {
             selectAnchor($('#anchor-resume'))
+            // console.log("vs resume : " + resumeSec.top);
         }
+
+        else if (scrollPos >= projectsSec.top) {
+            selectAnchor($('#anchor-projects'))
+            // console.log("projects : " + projectsSec.top + " -- resume : " + resumeSec.top);
+        }
+        else if (scrollPos >= skillsSec.top) {
+            selectAnchor($('#anchor-skills'))
+        }
+
+        else if (scrollPos >= eduSec.top) {
+            selectAnchor($('#anchor-edu'))
+        }
+
+        else if (scrollPos >= aboutSec.top) {
+            selectAnchor($('#anchor-about'))
+        }
+        else if (scrollPos >= introSec.top) {
+            selectAnchor($('#anchor-intro'))
+        }
+
     });
 });
 
