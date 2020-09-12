@@ -194,8 +194,11 @@ ul {
 
 #about-content .right {
     width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
     position: absolute;
-    top: 25%;
     right: 0;
     /* border: solid 2px green; */
 }
@@ -203,6 +206,8 @@ ul {
 #about-content .right>img {
     padding: 1%;
     border-radius: 50%;
+    width: 90%;
+    /* border: darkblue solid 2px; */
 }
 
 /* section 2 : education */

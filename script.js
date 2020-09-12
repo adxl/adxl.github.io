@@ -6,14 +6,14 @@
 //     selectAnchor(anchor)
 // }
 
-// function gotoAbout(elem) {
-//     // console.log("scrolled");
-//     let sec = document.getElementById("about-sec");
-//     sec.scrollIntoView({ behavior: "smooth" });
-//     let anchor = $(elem).children('i').eq(0)
-//     selectAnchor(anchor)
+function gotoAbout(elem) {
+    // console.log("scrolled");
+    let sec = document.getElementById("about-sec");
+    sec.scrollIntoView({ behavior: "smooth" });
+    let anchor = $(elem).children('i').eq(0)
+    selectAnchor(anchor)
 
-// }
+}
 
 // function gotoEdu(elem) {
 //     // console.log("scrolled");
