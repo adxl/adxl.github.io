@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Adel Senhadji | Web Developer</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+	<link rel="stylesheet" href="style.css">
+
+	<script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+
+	<!-- navigator -->
+	<div id="navigator">
+		<div id="anchors">
+			<ul>
+				<!--home-->
+				<li><a onclick="gotoIntro(this)"><i id="anchor-intro" class="anchor-b fas fa-circle"></i></a>
+				</li>
+				<!--about-->
+				<li><a> <i id="anchor-about" class="fas fa-circle"></i></a></li>
+				<!--edu-->
+				<li><a onclick="gotoEdu(this)"><i id="anchor-edu" class="fas fa-circle"></i></a></li>
+				<!--skills-->
+				<li><a onclick="gotoSkills(this)"><i id="anchor-skills" class="fas fa-circle"></i></a></li>
+				<!--project-->
+				<li><a onclick="gotoProjects(this)"><i id="anchor-projects" class="fas fa-circle"></i></a></li>
+				<!--resume-->
+				<li><a onclick="gotoResume(this)"><i id="anchor-resume" class="fas fa-circle"></i></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- section 0 : intro -->
+	<div id="intro-sec">
+		<div id="name">
+			<h1>Hi, I'm
+				<p id="custom-name">
+					Adel
+				</p>
+			</h1>
+		</div>
+		<div id="title">
+			<p>Full Stack Web Developer</p>
+		</div>
+		<div class="scroll-arrow white-arrow">
+			<i onclick="gotoAbout()" class="fas fa-angle-down"></i>
+		</div>
+	</div>
+
+	<!-- section 1 : about me -->
+	<div id="about-sec">
+		<div id="about-container">
+			<div id="about-content">
+				<div class="left">
+					<h1>About me</h1>
+					<p>My name is Adel Senhadji, I'm 21. I'm currently a computer science student and a full stack web
+						developer.</p>
+				</div>
+				<div class="right">
+					<!-- <img src="https://via.placeholder.com/200" alt=""> -->
+					<!-- <img src="https://picsum.photos/200" alt=""> -->
+					<!-- <img src="res/temp_profilepic.jpg" alt=""> -->
+					<img src="res/profile.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- section 2 : education -->
+	<div id="edu-sec">
+		<div id="edu-cont">
+			<h1>EDUCATION</h1>
+			<ul>
+				<li class="edu-item">
+					<ul>
+						<li>
+							<p class="edu-time">2020-2021</p>
+						</li>
+						<li>
+							<p class="edu-degree">
+								Bachelor's Degree in Web Engineering
+							</p>
+						</li>
+						<li>
+							<p class="edu-school">ESGI, France</p>
+						</li>
+					</ul>
+				</li>
+				<li class="edu-item">
+					<ul>
+						<li>
+							<p class="edu-time">2016-2019</p>
+						</li>
+						<li>
+							<p class="edu-degree">
+								Bachelor's Degree in Computer Science
+							</p>
+						</li>
+						<li>
+							<p class="edu-school">
+								University of Oran1, Algeria
+							</p>
+						</li>
+					</ul>
+				</li>
+				<li class="edu-item">
+					<ul>
+						<li>
+							<p class="edu-time">June 2016</p>
+						</li>
+						<li>
+							<p class="edu-degree">
+								High School Degree in Experimental Sciences
+							</p>
+						</li>
+						<li>
+							<p class="edu-school">
+								Colonel Lotfi High School, Algeria
+							</p>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<!-- section 3 : skills -->
+	<div id="skills-sec">
+		<div id="skills-cont">
+			<h1>SKILLS</h1>
+			<div class="cat">
+				<p class="title">Languages</p>
+				<ul>
+					<li>HTML/CSS</li>
+					<li>JavaScript</li>
+					<li>Java</li>
+				</ul>
+			</div>
+			<div class="cat">
+				<p class="title">Web Technologies</p>
+				<ul>
+					<li>ReactJS</li>
+					<li>jQuery</li>
+					<li>Node.js</li>
+					<li>p5.js</li>
+					<li>Bootstrap</li>
+					<li>Spring</li>
+				</ul>
+			</div>
+			<div class="cat">
+				<p class="title">Databases</p>
+				<ul>
+					<li>MySQL</li>
+					<li>MongoDB</li>
+				</ul>
+			</div>
+			<div class="cat">
+				<p class="title">Dev & Design Tools</p>
+				<ul>
+					<li>git/Github</li>
+					<li>Linux Shell</li>
+					<li>UML</li>
+					<li>Trello</li>
+					<li>Visual Studio Code</li>
+					<li>IntelliJ IDEA</li>
+					<li>Photoshop/Illustrator</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- section 4 : projects -->
+	<div id="projects-sec">
+		<h1 id="projects-main-title">PROJECTS</h1>
+
+
+		<div id="p-wtrk" class="project-item project-item-left">
+			<div class="picture">
+				<!-- <img src="https://raw.githubusercontent.com/adxl/Weight-Tracker/master/res/sc.png" alt=""> -->
+				<!-- <img src="res/temp_placeholderpic.png" alt=""> -->
+				<img src="res/c_wt.png">
+			</div>
+			<div class="details">
+				<p class="title">Weight Tracker</p>
+				<p class="description">A web application that allows you to track your weight and keep an
+					eye on your evolution.</p>
+				<p class="tech">Made with:
+					<span>Spring, ReactJS, MongoDB</span>
+				</p>
+				<div class="techs-logos-container">
+					<div class="techs-logos">
+						<img src="res/techs/spring_icon.png" alt="">
+						<img src="res/techs/react_icon.png" alt="">
+						<img src="res/techs/mongo_icon.png" alt="">
+					</div>
+				</div>
+				<p class="features">FEATURES:</p>
+				<ul>
+					<li>- User authentication</li>
+					<li>- Each entry with its corresponding date</li>
+					<li>- Visual representation of data in a chart</li>
+					<li>- Export data as <code>JSON</code></li>
+				</ul>
+				<div class="links">
+					<a target="_blank" href="https://www.github.com/adxl/Weight-Tracker/"><button type="button"
+							class="source-btn btn btn-light">Source</button></a>
+					<!-- <a target="_blank"  href=""><button type="button" class="try-btn btn btn-outline-success waves-effect">Try it</button></a> -->
+				</div>
+			</div>
+		</div>
+
+		<div id="p-life" class="project-item project-item-right">
+
+			<div class="picture">
+				<!-- <img src="https://raw.githubusercontent.com/adxl/life/master/resources/ls-1.png" alt=""> -->
+				<!-- <img src="res/temp_placeholderpic.png" alt=""> -->
+				<img src="res/c_lf.png">
+
+			</div>
+			<div class="details">
+				<p class="title">Life</p>
+				<p class="description">An implementation of Conway's Game of Life</p>
+				<p class="tech">Made with:
+					<span>ReactJS, P5.js</span>
+				</p>
+				<div class="techs-logos-container">
+					<div class="techs-logos">
+						<img src="res/techs/react_icon.png" alt="">
+						<img src="res/techs/p5_icon.png" alt="">
+					</div>
+				</div>
+				<p class="features">FEATURES:</p>
+				<ul>
+					<li>- Custom grid size</li>
+					<li>- Possibility to limit generations</li>
+					<li>- Square or circle shaped cells</li>
+					<li>- Smooth animation</li>
+
+				</ul>
+				<div class="links">
+					<a target="_blank" href="https://www.github.com/adxl/Life/"><button type="button"
+							class="source-btn btn btn-light">Source</button></a>
+					<a target="_blank" href="https://adxl.github.io/life/"><button type="button"
+							class="try-btn btn btn-outline-success waves-effect">Try
+							it</button></a>
+				</div>
+			</div>
+		</div>
+
+		<div id="p-knights" class="project-item project-item-left">
+			<div class="picture">
+				<!-- <img src="https://raw.githubusercontent.com/adxl/knights/master/res/wide-sc.png" alt=""> -->
+				<!-- <img src="res/temp_placeholderpic.png" alt=""> -->
+				<img src="res/c_kn.png">
+			</div>
+			<div class="details">
+				<p class="title">Knights</p>
+				<p class="description">A puzzle game based on chess, where the goal is to swap between 4
+					knight pieces.</p>
+				<p class="tech">Made with:
+					<span>ReactJS, P5.js</span>
+				</p>
+				<div class="techs-logos-container">
+					<div class="techs-logos">
+						<img src="res/techs/react_icon.png" alt="">
+						<img src="res/techs/p5_icon.png" alt="">
+					</div>
+				</div>
+				<p class="features">FEATURES:</p>
+				<ul>
+					<li>- Clear rules in English and French</li>
+					<li>- Possibility to toggle hints</li>
+					<li>- Moves counter and final score at the end</li>
+					<li>- Hosted on pages and ready-to-play</li>
+				</ul>
+				<div class="links">
+					<a target="_blank" href="https://www.github.com/adxl/knights/"><button type="button"
+							class="source-btn btn btn-light">Source</button></a>
+					<a target="_blank" href="https://adxl.github.io/knights/"><button type="button"
+							class="try-btn btn btn-outline-success waves-effect">Try
+							it</button></a>
+				</div>
+			</div>
+		</div>
+
+		<div id="p-webuy" class="project-item project-item-right">
+			<div class="picture">
+				<img src="res/c_wb.png" alt="">
+				<!-- <img src="res/temp_placeholderpic.png" alt=""> -->
+			</div>
+			<div class="details">
+				<p class="title">WeBuy</p>
+				<p class="description">An e-commerce web application</p>
+				<p class="tech">Made with:
+					<span>HTML/CSS, JavaScript (jQuery), Spring, MongoDB</span>
+				</p>
+				<div class="techs-logos-container">
+					<div class="techs-logos">
+						<img src="res/techs/jquery_icon.png" alt="">
+						<img src="res/techs/spring_icon.png" alt="">
+						<img src="res/techs/mongo_icon.png" alt="">
+					</div>
+				</div>
+				<p class="features">FEATURES:</p>
+				<ul>
+					<li>- Cart management</li>
+					<li>- Orders overview</li>
+					<li>- Rechargeable E-wallet with tickets</li>
+					<li>- Multiple admin roles</li>
+					<li>- Storage management</li>
+					<li>- Ready-to-print order bill</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="p-forum" class="project-item project-item-left">
+			<div class="picture">
+				<!-- <img src="https://raw.githubusercontent.com/adxl/forum/master/resources/sc-1.png" alt=""> -->
+				<!-- <img src="res/temp_placeholderpic.png" alt=""> -->
+				<img src="res/c_fr.png">
+			</div>
+			<div class="details">
+				<p class="title">Forum</p>
+				<p class="description">An anonymous questions/answers web application.</p>
+				<p class="tech">Made with:
+					<span>AngularJS, Spring, MySQL</span>
+				</p>
+				<div class="techs-logos-container">
+					<div class="techs-logos">
+						<img src="res/techs/angular_icon.png" alt="">
+						<img src="res/techs/spring_icon.png" alt="">
+						<img src="res/techs/mysql_icon.png" alt="">
+					</div>
+				</div>
+				<p class="features">FEATURES:</p>
+				<ul>
+					<li>- No registration needed</li>
+					<li>- Possibility to sort questions by date or answers count</li>
+					<li>- Jump to a random question feature </li>
+
+				</ul>
+				<div class="links">
+					<a target="_blank" href="https://www.github.com/adxl/forum/"><button type="button"
+							class="source-btn btn btn-light">Source</button></a>
+					<!-- <a target="_blank"  href=""><button type="button" class="try-btn btn btn-outline-success waves-effect">Try it</button></a> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- section 5 : cv -->
+	<div id="resume-sec">
+		<div id="resume-dwld">
+			<div id="resume-title">
+				<h1>Download my resume</h1>
+			</div>
+			<div id="dl-buttons">
+				<button class="btn" disabled>English</button>
+				<button class="btn btn-light" disabled>French</button>
+			</div>
+		</div>
+		<div id="social-container">
+			<div id="social-content">
+				<div id="mail">
+					<a href="mailto:adelsenhadjii@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+				</div>
+				<div id="linked">
+					<a href="https://www.linkedin.com/in/asenhadji/" target="_blank"><i class="fab fa-linkedin"></i></a>
+				</div>
+				<div id="github">
+					<a href="https://www.github.com/adxl/" target="_blank"><i class="fab fa-github"></i></a>
+				</div>
+				<div id="facebook">
+					<a href="https://www.fb.com/senhadel" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+		</div>
+		<div id="copyrights">
+			<p>
+				&copy; 2020 Adel Senhadji
+			<p>
+		</div>
+	</div>
+
+</body>
+
+</html>
