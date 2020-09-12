@@ -34,7 +34,7 @@ ul {
 }
 
 #navigator>#anchors ul {
-    margin: 5px 2px;
+    margin: 0 5px;
 }
 
 #navigator>#anchors i {
@@ -44,8 +44,9 @@ ul {
 }
 
 .anchor-b {
-    border: crimson 3px solid;
-    border-radius: 50%;
+    border: crimson 4px solid;
+    /* border-radius: 50%; */
+    background-color: #212529;
 }
 
 /* section 0 : intro */

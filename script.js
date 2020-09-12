@@ -10,9 +10,10 @@ function gotoIntro(elem) {
 }
 
 function selectAnchor(anchor) {
-    console.log(anchor.attr('class'));
+    $('.anchor-b').removeClass('anchor-b')
+    // console.log(anchor.attr('class'));
     anchor.addClass('anchor-b')
-    console.log(anchor.attr('class'));
+    // console.log(anchor.attr('class'));
 }
 
 
