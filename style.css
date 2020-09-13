@@ -260,6 +260,10 @@ ul {
     border-bottom-left-radius: 100%;
 }
 
+#mobile-curve {
+    display: none;
+}
+
 #edu-sec h1 {
     font-size: xx-large;
     text-align: center;
