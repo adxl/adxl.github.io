@@ -276,42 +276,46 @@ ul {
 #skills-sec {
     width: 100%;
     height: 100%;
-    background-color: crimson;
     scroll-snap-align: start;
 }
 
 #skills-cont {
-    overflow: hidden;
     background-color: #1C1B20;
-    height: 90%;
+    height: 100%;
 }
 
 #skills-cont h1 {
-    font-size: xx-large;
+    font-size: 2rem;
+    padding: 40px 0;
     text-align: center;
-    margin: 50px 0 100px 0;
     color: white;
 }
 
 #skills-cont .cat {
-    width: 25%;
+    width: 50%;
     float: left;
+    overflow: hidden;
+    /* border: dashed 2px blue; */
+}
+
+#skills-cont .cat-left {
+    text-align: right;
+    padding-right: 10px;
 }
 
 #skills-cont .cat .title {
     color: white;
-    padding-left: 25%;
+    padding-left: 5px;
 }
 
 #skills-cont .cat ul {
-    padding-left: 30%;
+    padding-left: 10px;
 }
 
 /* skills elements */
 
 #skills-cont .cat li {
     color: #919099;
-    margin: 10px 0;
 }
 
 /* section 4 : projects */
