@@ -206,36 +206,47 @@ ul {
 
 #edu-sec {
     overflow: hidden;
-    background-color: #1C1B20;
+    background-color: white;
     height: 100vh;
     scroll-snap-align: start;
-    /* border: dashed 4px green; */
+    /* border: dashed 2px blue; */
     position: relative;
+}
+
+#mobile-curve-container {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    background-color: #1C1B20;
+    /* border: dashed 4px blue; */
 }
 
 #mobile-curve {
     width: 100%;
-    height: 50%;
+    height: 100%;
     background-color: white;
     border-bottom: solid 50px crimson;
     border-bottom-left-radius: 100%;
 }
 
 #edu-cont {
+    position: absolute;
     width: 100%;
-    height: 50%;
-    background-color: white;
+    height: 100%;
     /* border: dashed 2px red; */
+    z-index: 2;
 }
 
 #edu-sec h1 {
     font-size: xx-large;
     text-align: center;
-    padding: 50px 0 50px 0;
+    margin: 40px 0;
 }
 
-#edu-sec ul:first-child {
-    padding-left: 50%;
+#edu-cont ul:first-child {
+    /* border: dashed 2px green; */
+    padding-left: 5%;
 }
 
 #edu-sec .edu-item {
