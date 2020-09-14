@@ -59,7 +59,7 @@ ul {
 }
 
 .anchor-b {
-    border: crimson 4px solid;
+    border: #2d748a 4px solid;
     /* border-radius: 50%; */
     background-color: #212529;
 }
@@ -70,7 +70,7 @@ ul {
     background-color: #1C1B20;
     height: 100vh;
     scroll-snap-align: start;
-    border-top: solid 3px crimson;
+    border-top: solid 3px #2d748a;
     text-align: center;
 }
 
@@ -94,7 +94,7 @@ ul {
     height: 100vh;
     text-align: center;
     scroll-snap-align: start;
-    border-top: solid 3px crimson;
+    border-top: solid 3px #2d748a;
 }
 
 #name {
@@ -109,7 +109,7 @@ ul {
 
 #custom-name {
     color: white;
-    border-bottom: solid 2px crimson;
+    border-bottom: solid 2px #2d748a;
     display: inline;
     padding: 0 5px;
 }
@@ -182,7 +182,7 @@ ul {
     position: absolute;
     top: 10%;
     left: 10%;
-    /* background-color: crimson; */
+    /* background-color: #2d748a; */
     border-radius: 20px 0 0 15px;
 }
 
@@ -204,7 +204,7 @@ ul {
     background-color: #1C1B20;
     overflow: hidden;
     position: relative;
-    border-bottom: solid 15px crimson;
+    border-bottom: solid 15px #2d748a;
 }
 
 #about-content .left {
@@ -256,7 +256,7 @@ ul {
 #edu-cont {
     height: 100%;
     background-color: white;
-    border-bottom: solid 50px crimson;
+    border-bottom: solid 50px #2d748a;
     border-bottom-left-radius: 100%;
 }
 
@@ -301,7 +301,7 @@ ul {
 #skills-sec {
     width: 100%;
     height: 100%;
-    background-color: crimson;
+    background-color: #2d748a;
     scroll-snap-align: start;
 }
 
@@ -466,7 +466,7 @@ ul {
 .project-item .links {
     text-align: center;
     margin-top: 10px;
-    /* border: 3px crimson solid; */
+    /* border: 3px #2d748a solid; */
 }
 
 .project-item .links .source-btn {
@@ -482,7 +482,7 @@ ul {
 #resume-sec {
     /* border: solid 5px green; */
     height: 100vh;
-    background-color: crimson;
+    background-color: #2d748a;
     /* position: relative; */
     overflow: hidden;
     scroll-snap-align: start;
@@ -491,8 +491,8 @@ ul {
 
 #resume-dwld {
     width: 100%;
-    height: 70%;
-    margin-top: 15vh;
+    height: 96%;
+    margin-top: 2vh;
     background-color: #1C1B20;
 }
 
