@@ -13,6 +13,7 @@ h1, p {
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 /* extra : lang-chooser */
@@ -205,36 +206,31 @@ ul {
 /* section 2 : education */
 
 #edu-sec {
-    overflow: hidden;
     background-color: white;
-    height: 100vh;
-    scroll-snap-align: start;
-    /* border: dashed 2px blue; */
+    /* height: 100vh; */
+    /* scroll-snap-align: start; */
+    border: dashed 2px blue;
     position: relative;
 }
 
 #mobile-curve-container {
     width: 100%;
-    height: 50%;
-    position: absolute;
-    top: 50%;
+    height: 100vw;
     background-color: #1C1B20;
     /* border: dashed 4px blue; */
 }
 
 #mobile-curve {
-    width: 100%;
     height: 100%;
+    width: 100%;
     background-color: white;
     border-bottom: solid 50px crimson;
     border-bottom-left-radius: 100%;
 }
 
 #edu-cont {
-    position: absolute;
     width: 100%;
-    height: 100%;
-    /* border: dashed 2px red; */
+    border: dashed 2px red;
     z-index: 2;
 }
 
@@ -245,24 +241,24 @@ ul {
 }
 
 #edu-cont ul:first-child {
-    /* border: dashed 2px green; */
+    border: dashed 2px green;
     padding-left: 5%;
 }
 
 #edu-sec .edu-item {
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 #edu-sec .edu-item p {
-    margin: 5px;
+    margin-top: 5px;
 }
 
 #edu-sec .edu-time {
-    font-size: medium;
+    font-size: 1rem;
 }
 
 #edu-sec .edu-degree {
-    font-size: large;
+    font-size: 1.1rem;
     padding-left: 20px;
 }
 
