@@ -557,9 +557,9 @@ ul {
 
 #copyrights {
     width: 100%;
+    margin-top: -15vh;
     text-align: center;
     height: 15vh;
-    /* border: solid 3px green; */
     display: flex;
     justify-content: center;
     align-items: center;
