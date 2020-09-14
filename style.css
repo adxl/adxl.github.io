@@ -70,7 +70,7 @@ ul {
     background-color: #1C1B20;
     height: 100vh;
     scroll-snap-align: start;
-    border-top: solid 3px #2d748a;
+    border-top: solid 2vh #2d748a;
     text-align: center;
 }
 
@@ -94,7 +94,7 @@ ul {
     height: 100vh;
     text-align: center;
     scroll-snap-align: start;
-    border-top: solid 3px #2d748a;
+    border-top: solid 2vh #2d748a;
 }
 
 #name {
