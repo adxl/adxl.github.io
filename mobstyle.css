@@ -269,41 +269,45 @@ ul {
 
 #skills-sec {
     width: 100%;
-    height: 100%;
     scroll-snap-align: start;
+    /* border: dashed 2px green; */
 }
 
 #skills-cont {
     background-color: #1C1B20;
-    height: 100%;
+    padding-bottom: 50px;
+    width: 100%;
+    border-bottom: solid 10px crimson;
 }
 
 #skills-cont h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     padding: 40px 0;
     text-align: center;
     color: white;
 }
 
 #skills-cont .cat {
-    width: 50%;
-    float: left;
-    overflow: hidden;
-    /* border: dashed 2px blue; */
+    width: 100%;
+    margin-bottom: 30px;
+    /* border: dashed 2px green; */
 }
 
 #skills-cont .cat-left {
-    text-align: right;
-    padding-right: 10px;
+    /* text-align: right;
+    padding-right: 10px; */
 }
 
 #skills-cont .cat .title {
     color: white;
-    padding-left: 5px;
+    /* border: dashed 1px blue; */
+    text-align: center;
 }
 
 #skills-cont .cat ul {
-    padding-left: 10px;
+    /* padding-left: 10px; */
+    /* border: dashed 2px yellow; */
+    text-align: center;
 }
 
 /* skills elements */
