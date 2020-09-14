@@ -69,7 +69,7 @@ ul {
 
 #name {
     text-align: center;
-    padding-top: 30%;
+    padding-top: 30vh;
 }
 
 #name>h1 {
@@ -99,7 +99,7 @@ ul {
     width: 100%;
     cursor: pointer;
     position: absolute;
-    bottom: 30vh;
+    bottom: 10vh;
     /* border: solid 2px green; */
     left: 0;
 }
