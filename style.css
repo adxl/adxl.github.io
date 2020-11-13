@@ -1,11 +1,13 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     scroll-snap-type: y proximity;
 }
 
-h1, p {
+h1,
+p {
     margin: 0;
     color: #343a40;
 }
@@ -14,6 +16,7 @@ ul {
     list-style-type: none;
     padding: 0;
 }
+
 
 /* extra : lang-chooser */
 
@@ -25,6 +28,23 @@ ul {
     color: white;
     padding: 0 10px;
 }
+
+
+/* extra : maintenance message */
+
+#maintenance {
+    margin-top: 40px;
+}
+
+#maintenance h1 {
+    color: white;
+}
+
+#maintenance p {
+    padding-top: 15px;
+    color: white
+}
+
 
 /* extra : navigator */
 
@@ -64,6 +84,7 @@ ul {
     background-color: #212529;
 }
 
+
 /* section -1 : home */
 
 #home-sec {
@@ -86,6 +107,7 @@ ul {
     font-size: 38pt;
     color: white;
 }
+
 
 /* section 0 : intro */
 
@@ -148,6 +170,7 @@ ul {
     color: #343a40;
 }
 
+
 /* section 1 : about */
 
 #about-sec {
@@ -160,6 +183,7 @@ ul {
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
+
 
 /* 
 #about-panel {
@@ -185,6 +209,7 @@ ul {
     /* background-color: #2d748a; */
     border-radius: 20px 0 0 15px;
 }
+
 
 /* #about-container {
     background-color: white;
@@ -244,6 +269,7 @@ ul {
     /* border: darkblue solid 2px; */
 }
 
+
 /* section 2 : education */
 
 #edu-sec {
@@ -296,6 +322,7 @@ ul {
     padding-left: 50px;
 }
 
+
 /* section 3 : skills */
 
 #skills-sec {
@@ -332,12 +359,14 @@ ul {
     padding-left: 30%;
 }
 
+
 /* skills elements */
 
 #skills-cont .cat li {
     color: #919099;
     margin: 10px 0;
 }
+
 
 /* section 4 : projects */
 
@@ -476,6 +505,7 @@ ul {
 .project-item .links .try-btn {
     margin: 10px;
 }
+
 
 /* section 5 : cv */
 

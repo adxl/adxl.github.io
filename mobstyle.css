@@ -1,11 +1,13 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     scroll-snap-type: y proximity;
 }
 
-h1, p {
+h1,
+p {
     margin: 0;
     color: #343a40;
 }
@@ -15,6 +17,7 @@ ul {
     padding: 0;
     margin: 0;
 }
+
 
 /* extra : lang-chooser */
 
@@ -27,11 +30,29 @@ ul {
     padding: 0 10px;
 }
 
+
+/* extra : maintenance message */
+
+#maintenance {
+    margin-top: 40px;
+}
+
+#maintenance h1 {
+    color: white;
+}
+
+#maintenance p {
+    padding-top: 15px;
+    color: white
+}
+
+
 /* extra : navigator */
 
 #navigator {
     display: none;
 }
+
 
 /* section -1 : home */
 
@@ -55,6 +76,7 @@ ul {
     font-size: 38pt;
     color: white;
 }
+
 
 /* section 0 : intro */
 
@@ -112,6 +134,7 @@ ul {
     color: #343a40;
 }
 
+
 /* section 1 : about */
 
 #about-sec {
@@ -125,6 +148,7 @@ ul {
     scroll-snap-stop: always;
     background-color: #1C1B20;
 }
+
 
 /* 
 #about-panel {
@@ -145,6 +169,7 @@ ul {
     background-color: #1C1B20;
     /* background-color: #2d748a; */
 }
+
 
 /* #about-container {
     background-color: white;
@@ -201,6 +226,7 @@ ul {
     border: #2d748a solid 3px;
     background-color: #2d748a;
 }
+
 
 /* section 2 : education */
 
@@ -266,6 +292,7 @@ ul {
     padding-left: 50px;
 }
 
+
 /* section 3 : skills */
 
 #skills-sec {
@@ -311,11 +338,13 @@ ul {
     text-align: center;
 }
 
+
 /* skills elements */
 
 #skills-cont .cat li {
     color: #919099;
 }
+
 
 /* section 4 : projects */
 
@@ -346,6 +375,7 @@ ul {
     border: none
 }
 
+
 /* .project-item-left {
     margin-left: -5%;
     margin-right: 5%;
@@ -362,6 +392,7 @@ ul {
     text-align: center;
     /* border: solid 3px red; */
 }
+
 
 /* .project-item-left .picture {
     float: left;
@@ -387,10 +418,12 @@ ul {
     padding-bottom: 30px;
 }
 
+
 /* .project-item-left .details {
     width: 35%;
     float: right;
 } */
+
 
 /* .project-item-right .details {
     width: 35%;
@@ -459,6 +492,7 @@ ul {
 .project-item .links .try-btn {
     margin: 10px 0 0;
 }
+
 
 /* section 5 : cv */
 
