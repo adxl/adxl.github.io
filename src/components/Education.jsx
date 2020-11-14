@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 
 export default function Education() {
 	return (
-		<Container>
+		<Container fluid>
 			Education
 		</Container>
 	);

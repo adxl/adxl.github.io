@@ -1,10 +1,10 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 
-export default function Home() {
+export default function Resume() {
 	return (
 		<Container fluid>
-			Home
+			Resume
 		</Container>
 	);
 }
