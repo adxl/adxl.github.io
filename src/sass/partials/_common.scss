@@ -5,6 +5,27 @@ body {
     font-family: $font-primary;
 }
 
+ul {
+    list-style: none;
+}
+
+#edu-list {
+    border-left: solid 2px $pip-primary;
+    position: relative;
+    .circle {
+        position: absolute;
+        background-color: $bg-dark;
+        left: 0;
+        border: solid 2px $pip-primary;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        transform: translateX(-7px);
+    }
+    li {
+    }
+}
+
 #root {
     height: 100vh;
 }

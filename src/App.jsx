@@ -7,7 +7,7 @@ import Section from './components/Section';
 import Footer	 from './components/Footer';
 
 export default function App() {
-	const [section, setSection] = useState('home');
+	const [section, setSection] = useState('edu');
 
 	return (
 		<Container id="main" fluid className="d-flex flex-column h-100 p-0 position-relative">
