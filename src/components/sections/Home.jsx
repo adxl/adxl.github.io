@@ -5,7 +5,7 @@ export default function Home() {
 	return (
 		<Container>
 			<div>
-				<h1>Bonjour, </h1>
+				<h1 className="section-title">Bonjour, </h1>
 				<p>
 					Je m&apos;appelle Adel Senhadji, j&apos;ai 22 ans.<br />
 					Je suis actuellement étudiant en informatique et développeur web Full Stack.

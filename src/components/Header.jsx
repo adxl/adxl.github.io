@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 
 export default function Header({ setSection }) {
-	const [currentTab, setCurrentTab] = useState('home');
+	const [currentTab, setCurrentTab] = useState('skills');
 
 	const selectTab = (tab) => {
 		setSection(tab);

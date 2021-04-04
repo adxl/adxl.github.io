@@ -31,10 +31,10 @@ export default function Footer() {
 				{getTodayDate()}
 			</div>
 			<div className="d-flex align-items-center">
+				<span className="mr-2">Niveau {getAge()}</span>
 				<div id="age-bar">
 					<div style={{ width: getAgeProgress() }} />
 				</div>
-				<span className="ml-2">{getAge()}</span>
 			</div>
 		</Container>
 	);
