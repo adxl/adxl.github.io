@@ -1,11 +1,26 @@
 body {
-    // margin: 0;
     height: 100vh;
     background-color: $bg-dark;
-    color: $white;
+    color: $pip-primary;
     font-family: $font-primary;
 }
 
 #root {
     height: 100vh;
+}
+
+#footer {
+    position: absolute;
+    bottom: 40px;
+    padding: 0 30px;
+
+    #age-bar {
+        border: solid 1px $pip-primary;
+        width: 200px;
+        height: 15px;
+        div {
+            height: 100%;
+            background-color: $pip-primary;
+        }
+    }
 }
