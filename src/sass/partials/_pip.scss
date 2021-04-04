@@ -1,0 +1,40 @@
+.pip-main {
+    border-top: solid 2px $pip-green;
+    border-bottom: solid 2px $pip-green;
+    position: relative;
+    &:before {
+        content: '';
+        height: 10%; //You can change this if you want smaller/bigger borders
+        width: 100%;
+
+        position: absolute;
+        top: 0;
+        border-left: solid 2px $pip-green;
+        border-right: solid 2px $pip-green;
+    }
+    &:after {
+        content: '';
+        height: 10%; //You can change this if you want smaller/bigger borders
+        width: 100%;
+
+        position: absolute;
+        bottom: 0;
+        border-left: solid 2px $pip-green;
+        border-right: solid 2px $pip-green;
+    }
+}
+
+.pip-menu {
+    color: $white;
+    font-weight: 300;
+    margin-bottom: -2px;
+    z-index: 2;
+    &:hover {
+        color: inherit;
+    }
+    &.pip-menu-selected {
+        background-color: $bg-dark;
+        border: solid 2px $pip-green;
+        border-bottom: none;
+    }
+}

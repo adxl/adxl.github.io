@@ -1,21 +1,19 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 
-import Home from './Home';
-import Education from './Education';
-import Skills from './Skills';
-import Projects from './Projects';
-import Resume from './Resume';
+import sections from './sections';
 
 export default function Section({ section }) {
-	console.log(`renders section with : ${section}`);
 	return (
-		<Container fluid className="border d-flex justify-content-center align-items-center h-100">
-			{section === 'Home' && <Home />}
-			{section === 'Education' && <Education />}
-			{section === 'Skills' && <Skills />}
-			{section === 'Projects' && <Projects />}
-			{section === 'Resume' && <Resume />}
+		<Container fluid className="d-flex justify-content-center align-items-center h-100 pb-4">
+			<Container fluid className="pip-main h-100 d-flex justify-content-center align-items-center">
+				{section === 'home' && <sections.Home />}
+				{section === 'edu' && <sections.Education />}
+				{section === 'exp' && <sections.Experiences />}
+				{section === 'skills' && <sections.Skills />}
+				{section === 'projects' && <sections.Projects />}
+				{section === 'resume' && <sections.Resume />}
+			</Container>
 		</Container>
 	);
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 
-export default function Projects() {
+export default function Home() {
 	return (
-		<Container fluid>
-			Projects
+		<Container className="text-center">
+			<h1>Home</h1>
 		</Container>
 	);
 }
