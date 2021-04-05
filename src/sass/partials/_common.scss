@@ -13,7 +13,7 @@ ul {
     margin: 1.75em 0;
 }
 
-.skill-cat {
+.pip-list {
     ul {
         padding: 0;
         text-align: left;
@@ -44,6 +44,10 @@ ul {
         height: 12px;
         transform: translateX(-7px);
     }
+}
+
+.tech-icon {
+    width: 20px;
 }
 
 #root {
