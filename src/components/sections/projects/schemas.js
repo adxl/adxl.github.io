@@ -3,7 +3,11 @@ export default {
 		image: '',
 		name: 'Herme.io',
 		description: 'Application web de réseau social',
-		tech: 'Node.js, ReactJS, PostgreSQL',
+		techs: [
+			{ name: 'Node.js', image: 'node' },
+			{ name: 'ReactJS', image: 'react' },
+			{ name: 'PostgreSQL', image: 'pg' },
+		],
 		features: [
 			'Création et suppression de publications',
 			'Ajouter des amis',
@@ -16,7 +20,11 @@ export default {
 		image: '',
 		name: 'Weight Tracker',
 		description: 'Application web permettant le suivi de poids corporel',
-		tech: 'Spring, ReactJS, MongoDB',
+		techs: [
+			{ name: 'Spring', image: 'spring' },
+			{ name: 'ReactJS', image: 'react' },
+			{ name: 'MongoDB', image: 'mongo' },
+		],
 		features: [
 			'Authentification de l\'utilisateur',
 			'Chaque entrée a sa date correspondante',
@@ -29,7 +37,10 @@ export default {
 		image: '',
 		name: 'Life',
 		description: 'Implémentation de l\'automate cellulaire de Conway',
-		tech: 'ReactJS, P5.js',
+		techs: [
+			{ name: 'ReactJS', image: 'react' },
+			{ name: 'P5.js', image: 'p5' },
+		],
 		features: [
 			'Taille de grille personnalisable',
 			'Possibilité de limiter les générations',
@@ -42,7 +53,10 @@ export default {
 		image: '',
 		name: 'Knights',
 		description: 'Casse-tête basé sur les échecs',
-		tech: 'ReactJS, P5.js',
+		techs: [
+			{ name: 'ReactJS', image: 'react' },
+			{ name: 'P5', image: 'p5' },
+		],
 		features: [
 			'Règles du jeu en français et en anglais',
 			'Possibilité d\'activer les indices',
@@ -55,7 +69,11 @@ export default {
 		image: '',
 		name: 'WeBuy',
 		description: 'Application web de E-commerce',
-		tech: 'HTML/CSS, JavaScript (jQuery), Spring, MongoDB',
+		techs: [
+			{ name: 'JavaScript (jQuery)', image: 'jquery' },
+			{ name: 'Spring', image: 'spring' },
+			{ name: 'MongoDB', image: 'mongo' },
+		],
 		features: [
 			'Gestion du panier',
 			'Aperçu des commandes',
@@ -71,12 +89,16 @@ export default {
 		image: '',
 		name: 'Forum',
 		description: 'Forum de discussions anonyme',
-		tech: 'AngularJS, Spring, MySQL',
+		techs: [
+			{ name: 'AngularJS', image: 'angular' },
+			{ name: 'Spring', image: 'spring' },
+			{ name: 'MySQL', image: 'mysql' },
+		],
 		features: [
 			'Aucune inscription requise',
 			'Possibilité de trier les questions par date ou nombre de réponses',
 			'Passage à une question aléatoire',
-			''],
+		],
 		source: 'https://www.github.com/adxl/forum',
 		demo: null,
 	},

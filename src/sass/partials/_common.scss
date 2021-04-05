@@ -13,24 +13,6 @@ ul {
     margin: 1.75em 0;
 }
 
-.pip-list {
-    ul {
-        padding: 0;
-        text-align: left;
-    }
-    li {
-        padding: 0.5em;
-        padding-right: unset;
-        margin-bottom: 1em;
-        border: solid 1px transparent;
-        &:hover {
-            border: solid 1px $pip-primary;
-            cursor: pointer;
-            background-color: darken($color: $pip-primary, $amount: 20);
-        }
-    }
-}
-
 #edu-list {
     border-left: solid 2px $pip-primary;
     position: relative;
