@@ -1,3 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 $font-primary: 'Roboto', sans-serif;
+
+.text-small {
+    font-size: 12px;
+}
+
+.text-medium {
+    font-size: 16px;
+}
+
+.text-large {
+    font-size: 32px;
+}
+
+.text-xlarge {
+    font-size: 48px;
+}
+
+.text-xxlarge {
+    font-size: 64px;
+}

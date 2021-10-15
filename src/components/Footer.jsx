@@ -1,5 +1,4 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 
 export default function Footer() {
 	const getTodayDate = () => {
@@ -26,7 +25,7 @@ export default function Footer() {
 		return ((diffDays * 200) / 365);
 	};
 	return (
-		<Container fluid id="footer" className="d-flex justify-content-between">
+		<div fluid id="footer" className="d-flex justify-content-between">
 			<div>
 				{getTodayDate()}
 			</div>
@@ -36,6 +35,6 @@ export default function Footer() {
 					<div style={{ width: getAgeProgress() }} />
 				</div>
 			</div>
-		</Container>
+		</div>
 	);
 }

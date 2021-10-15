@@ -38,7 +38,7 @@
         "no-console": "off",
         "react/jsx-one-expression-per-line": "off",
         "react/no-array-index-key": "off",
-        "react/prop-types": "off",
+        "react/prefer-stateless-function": "off",
         "object-curly-newline": "off",
         "no-plusplus": "off",
         "no-bitwise": "off",

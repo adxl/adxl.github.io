@@ -1,0 +1,17 @@
+#main {
+    section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        border: dashed 1px blue;
+        > div {
+            width: 80%;
+            border: dashed 1px violet;
+        }
+    }
+}
+
+.b {
+    border: dashed 2px red;
+}

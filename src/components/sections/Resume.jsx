@@ -1,10 +1,11 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 
-export default function Resume() {
-	return (
-		<Container className="text-center">
-			<h1>Resume</h1>
-		</Container>
-	);
+export default class Resume extends React.Component {
+	render() {
+		return (
+			<div className="text-center">
+				<h1>Resume</h1>
+			</div>
+		);
+	}
 }
