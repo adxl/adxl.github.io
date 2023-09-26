@@ -1,115 +1,231 @@
 .pip-main {
+  position: relative;
+
+  &:before {
+    content: "";
+
+    height: 5%;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+
     border-top: solid 1px $pip-primary;
-    border-bottom: solid 1px $pip-primary;
+
+    border-radius: 20px/100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &:after {
+    content: "";
+    height: 10%;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+
+    border-bottom: solid 3px $pip-primary;
+
+    border-radius: 20px/100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.pip-list-horizontal {
+  text-align: start;
+
+  ul {
+    padding-left: 0;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  li {
+    border: solid 1px transparent;
     position: relative;
-    &:before {
-        content: '';
-        height: 10%;
-        width: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    &:not(:last-child)::after {
+      content: "•";
+      margin: 0 0.5em;
+    }
+
+    &.pip-item-selected {
+      padding-left: 30px;
+      border: solid 1px $pip-primary;
+      cursor: pointer;
+      background-color: darken($color: $pip-primary, $amount: 20);
+      transition: padding 0.1s;
+      &:before {
+        content: "";
+        height: 10px;
+        width: 10px;
 
         position: absolute;
-        top: 0;
-        border-left: solid 2px $pip-primary;
-        border-right: solid 2px $pip-primary;
+        left: 10px;
+        background-color: $pip-primary;
+      }
     }
-    &:after {
-        content: '';
-        height: 10%;
-        width: 100%;
-
-        position: absolute;
-        bottom: 0;
-        border-left: solid 2px $pip-primary;
-        border-right: solid 2px $pip-primary;
-    }
+  }
 }
 
 .pip-list {
-    ul {
-        padding: 0;
-        text-align: left;
-    }
-    li {
-        padding: 0.5em;
-        padding-right: unset;
-        margin-bottom: 1em;
-        border: solid 1px transparent;
-        position: relative;
-        display: flex;
-        align-items: center;
-        &:hover {
-            border: solid 1px $pip-primary;
-            cursor: pointer;
-            background-color: darken($color: $pip-primary, $amount: 20);
-        }
-        &.pip-item-selected {
-            padding-left: 30px;
-            border: solid 1px $pip-primary;
-            cursor: pointer;
-            background-color: darken($color: $pip-primary, $amount: 20);
-            transition: padding 0.1s;
-            &:before {
-                content: '';
-                height: 10px;
-                width: 10px;
+  ul {
+    padding-left: 0;
+  }
 
-                position: absolute;
-                left: 10px;
-                background-color: $pip-primary;
-            }
-        }
+  li {
+    &:before {
+      display: block;
+      content: " ";
+      height: 7px;
+      width: 7px;
+      margin: 0 5px 0 0;
+      background-color: $pip-primary;
     }
+
+    padding: 0.5em;
+    padding-right: unset;
+    border: solid 1px transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    &.pip-item-selected {
+      padding-left: 30px;
+      border: solid 1px $pip-primary;
+      cursor: pointer;
+      background-color: darken($color: $pip-primary, $amount: 20);
+      transition: padding 0.1s;
+      &:before {
+        content: "";
+        height: 10px;
+        width: 10px;
+
+        position: absolute;
+        left: 10px;
+        background-color: $pip-primary;
+      }
+    }
+  }
 }
 
-.pip-menu {
-    color: $pip-primary;
-    font-weight: 300;
-    font-size: 1.5rem;
-    margin-bottom: -1px;
-    z-index: 2;
-    &:hover {
-        color: lighten($color: $pip-primary, $amount: 20);
+.pip-menu-item {
+  color: $pip-primary;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: -1px;
+  z-index: 2;
+  outline: none;
+
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: solid 2px $pip-primary;
+  border-radius: 8px 8px 0 0;
+  border-bottom: none;
+
+  &:hover {
+    color: lighten($color: $pip-primary, $amount: 20);
+  }
+
+  &:before {
+    content: "[";
+    padding: 0 3px 0 0;
+    opacity: 0;
+  }
+
+  &:after {
+    content: "]";
+    padding: 0 0 0 3px;
+    opacity: 0;
+  }
+
+  &.--selected {
+    color: lighten($color: $pip-primary, $amount: 10%);
+
+    &:before,
+    &:after {
+      opacity: 100;
     }
-    &.pip-menu-selected {
-        background-color: $bg-dark;
-        border: solid 2px $pip-primary;
-        border-bottom: none;
-    }
+
+    background-color: $bg-dark;
+    border: solid 2px $pip-primary;
+    border-bottom: none;
+  }
 }
 
 .pip-details {
-    border-top: solid 1px $pip-primary;
-    position: relative;
-    &:before {
-        content: '';
-        height: 20px;
-        width: 100%;
+  border-top: solid 1px $pip-primary;
+  position: relative;
+  &:before {
+    content: "";
+    height: 20px;
+    width: 100%;
 
-        position: absolute;
-        top: 0;
-        border-right: solid 2px $pip-primary;
-    }
+    position: absolute;
+    top: 0;
+    border-right: solid 2px $pip-primary;
+  }
 }
 
 .pip-btn {
-    display: inline-block;
-    color: $pip-primary;
-    text-align: center;
-    border: solid 1px $pip-primary;
+  cursor: pointer;
+
+  display: flex;
+  align-items: baseline;
+  color: $pip-primary;
+  text-align: center;
+
+  border: solid 1px $pip-primary;
+  border-radius: 6px;
+
+  background-color: transparent;
+  padding: 0.4em 0.6em;
+
+  &:hover {
+    color: lighten($pip-primary, 20);
+  }
+
+  &.pip-source-btn {
     background-color: transparent;
-    padding: 0.3em 0.5em;
+  }
 
-    &.pip-source-btn {
-        background-color: transparent;
-    }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
 
-    &.pip-try-btn {
-        background-color: darken($color: $pip-primary, $amount: 20);
-    }
+.pip-target {
+  display: flex;
+  align-items: center;
+  &:before {
+    display: block;
+    content: " ";
+    height: 6px;
+    width: 6px;
+    margin: 0 5px 0 0;
+    background-color: $pip-primary;
+  }
 }
 
 .pip-icon {
-    filter: grayscale(92%) sepia(75%) brightness(83%) hue-rotate(75deg) saturate(436%) contrast(106%);
-    width: 50px;
-    margin-bottom: 10px;
+  filter: grayscale(92%) sepia(75%) brightness(83%) hue-rotate(75deg)
+    saturate(436%) contrast(106%);
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.pip-logo {
+  font-size: 28px;
+  margin: 0 1em;
+  display: flex;
+  text-decoration: none;
 }

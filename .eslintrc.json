@@ -1,47 +1,33 @@
-{
+ {
     "env": {
         "browser": true,
         "es2021": true
     },
     "extends": [
-        "plugin:react/recommended",
-        "airbnb"
+        "standard-with-typescript",
+        "plugin:react/recommended"
+    ],
+    "overrides": [
+        {
+            "env": {
+                "node": true
+            },
+            "files": [
+                ".eslintrc.{js,cjs}"
+            ],
+            "parserOptions": {
+                "sourceType": "script"
+            }
+        }
     ],
     "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
+        "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "plugins": [
         "react"
     ],
     "rules": {
-        "semi": "error",
-        "no-unused-vars": "warn",
-        "indent": [
-            "warn",
-            "tab"
-        ],
-        "react/jsx-indent": [
-            "warn",
-            "tab"
-        ],
-        "react/jsx-indent-props": [
-            "warn",
-            "tab"
-        ],
-        "no-mixed-spaces-and-tabs": "warn",
-        "no-tabs": "off",
-        "no-await-in-loop": "off",
-        "no-console": "off",
-        "react/jsx-one-expression-per-line": "off",
-        "react/no-array-index-key": "off",
-        "react/prop-types": "off",
-        "object-curly-newline": "off",
-        "no-plusplus": "off",
-        "no-bitwise": "off",
-        "max-len": "warn"
+      "@typescript-eslint/consistent-type-definitions": "off"
     }
 }
