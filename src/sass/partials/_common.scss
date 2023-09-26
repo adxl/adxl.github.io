@@ -1,0 +1,104 @@
+body {
+  overflow: hidden;
+  height: 100vh;
+  background-color: $bg-dark;
+  color: $pip-primary;
+  position: fixed;
+
+  span,
+  p,
+  i,
+  li,
+  pre,
+  small,
+  button,
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-shadow:
+      0px 0px 2px darken($pip-primary, 100%),
+      0px 0px 10px transparentize($pip-primary, 0.2);
+  }
+
+  background-image: linear-gradient(
+    to bottom,
+    transparentize($pip-primary, 0.95) 1px,
+    transparent 1px
+  );
+  background-size: 100% 10px;
+
+  animation: moveBackgroundStripes 100s ease-in-out infinite;
+
+  font-family: $font-primary;
+  position: relative;
+}
+
+@keyframes moveBackgroundStripes {
+  0%,
+  100% {
+    background-position: 0 100%;
+  }
+  50% {
+    background-position: 0 0;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+.ascii-banner {
+  font-size: 0.5em;
+}
+
+.timeline-list {
+  border-left: solid 2px $pip-primary;
+  position: relative;
+  li {
+    margin-bottom: 0.8em;
+  }
+  .circle {
+    position: absolute;
+    background-color: $bg-dark;
+    left: 0;
+    border: solid 2px $pip-primary;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    transform: translateX(-7px);
+  }
+}
+
+.tech-icon {
+  width: 20px;
+}
+
+#root {
+  height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#main {
+  height: 100%;
+  perspective: 500rem;
+}
+
+#footer {
+  position: absolute;
+  bottom: 40px;
+  padding: 0 30px;
+
+  #age-bar {
+    border: solid 1px $pip-primary;
+    width: 200px;
+    height: 10px;
+    div {
+      height: 100%;
+      background-color: $pip-primary;
+    }
+  }
+}
