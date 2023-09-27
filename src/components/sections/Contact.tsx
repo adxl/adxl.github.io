@@ -20,7 +20,7 @@ const Contact: React.FC<Props> = () => {
       <button className='pip-btn' >
         <i className="fa-solid fa-file-pdf me-2" />
         <a href="/cv.pdf" download="CV - Adel Senhadji - Web Developer" target="_blank" rel="noreferrer" >
-          Télécharger le CV
+          Télécharger mon CV
         </a>
       </button>
 

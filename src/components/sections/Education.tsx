@@ -10,8 +10,8 @@ const Education: React.FC<Props> = () => {
     <div className='align-items-center container d-flex flex-column justify-content-start'>
       <div className='my-5'>
         <h1 className="text-uppercase">parcours scolaire</h1>
-        <p className='mb-0'>En 2020, après avoir fait une license en systèmes informatique,</p>
-        <p>je rejoint l&apos;ESGI pour un bachelor et un mastère en spécialisation dans le web.</p>
+        <p className='mb-0'>En 2020, après avoir fait une licence en systèmes informatiques,</p>
+        <p>je rejoins l&apos;ESGI pour un bachelor et un mastère en spécialisation dans le web.</p>
       </div>
       <div>
         <ul className="timeline-list text-start">
