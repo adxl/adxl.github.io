@@ -1,5 +1,6 @@
 import React from 'react'
 import { type SECTION } from '../../constants/sections'
+import { alertEmail, alertResumeDownload } from '../../api/discord'
 
 type Props = {
   setSection: React.Dispatch<React.SetStateAction<SECTION>>
@@ -14,12 +15,12 @@ const Contact: React.FC<Props> = () => {
 
       <button className='pip-btn mb-3' >
         <i className="fa-solid fa-arrow-up-right-from-square me-2" />
-        <a target='_blank' href={`mailto:${emailAddress}`} rel="noreferrer">{emailAddress}</a>
+        <a onClick={alertEmail} target='_blank' href={`mailto:${emailAddress}`} rel="noreferrer">{emailAddress}</a>
       </button>
 
       <button className='pip-btn' >
         <i className="fa-solid fa-file-pdf me-2" />
-        <a href="/cv.pdf" download="CV - Adel Senhadji - Web Developer" target="_blank" rel="noreferrer" >
+        <a onClick={alertResumeDownload} href="/cv.pdf" download="CV - Adel Senhadji - Web Developer" target="_blank" rel="noreferrer" >
           Télécharger mon CV
         </a>
       </button>

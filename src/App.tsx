@@ -5,6 +5,7 @@ import Section from './components/Section'
 import Footer from './components/Footer'
 
 import { HOME, type SECTION } from './constants/sections'
+import { alertVisit } from './api/discord'
 
 const App: React.FC = () => {
   const [_section, setSection] = useState<SECTION>(HOME)
@@ -35,6 +36,8 @@ const App: React.FC = () => {
     const handleResize = (): void => {
       setWindowWidth(window.innerWidth)
     }
+
+    alertVisit()
 
     window.addEventListener('resize', handleResize)
 
