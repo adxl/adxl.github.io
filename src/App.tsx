@@ -50,7 +50,7 @@ const App: React.FC = () => {
         <div>
           <h1>Désolé</h1>
           <p>Ce site n&apos;est pas encore disponible pour ce type d&apos;écrans. Mais...</p>
-          <p>Avec un peu de chance ça pourrait marcher en réduisant le niveau de zoom</p>
+          <p>Avec un peu de chance, ça pourrait marcher en réduisant le niveau de zoom.</p>
         </div>
         <div >
           <i className="fa-solid fa-bug me-2" />

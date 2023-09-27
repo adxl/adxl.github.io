@@ -11,7 +11,7 @@ const Experiences: React.FC<Props> = () => {
     <div >
       <div className='my-5'>
         <h1 className="text-uppercase">expériences professionnelles</h1>
-        <p className='mb-0'>Durant ces 3 années, j&apos;ai pu faire de l&apos;alternance où j&apos;ai été principalement en autonomie</p>
+        <p className='mb-0'>Durant ces 3 années, j&apos;ai pu faire de l&apos;alternance où j&apos;ai été principalement en autonomie.</p>
       </div>
       <div>
         <ul className='timeline-list text-start'>
