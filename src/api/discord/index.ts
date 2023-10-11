@@ -11,13 +11,13 @@ const alertSentinelle = (content: string): void => {
 }
 
 export const alertVisit = (): void => {
-  alertSentinelle('Individu repéré !')
+  alertSentinelle('Capteur de mouvement déclenché: Présence détectée.')
 }
 
 export const alertEmail = (): void => {
-  alertSentinelle('Lettre en vue !')
+  alertSentinelle("Attention: Protocol de contact d'urgence activé.")
 }
 
 export const alertResumeDownload = (): void => {
-  alertSentinelle('Document consulté !')
+  alertSentinelle('Intrusion critique dans la salle des archives.')
 }

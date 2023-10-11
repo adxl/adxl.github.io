@@ -30,8 +30,7 @@ const Home: React.FC<Props> = ({ setSection }) => {
             <i className="fa-solid fa-hand-peace ps-1 fs-5" />
             <span>, je suis Adel,</span>
           </div>
-          <span> Je suis développeur web, et comme vous l&apos;avez sans doute remarqué, j&apos;aime faire des choses qui sortent de l&apos;ordinaire, </span>
-          <span> comme coder sur vim ou avoir un portfolio du futur. </span>
+          <span> Je suis développeur web full stack / ops, et comme vous l&apos;avez sans doute remarqué, j&apos;aime faire des choses qui sortent de l&apos;ordinaire. </span>
         </div>
 
         <button onClick={() => { setSection(EDUCATION) }} className='d-flex align-items-center justify-content-center pip-btn my-3'>
